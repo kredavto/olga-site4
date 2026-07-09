@@ -41,7 +41,7 @@
 
   /* ───────── Scroll progress + hero parallax + parallax els ───────── */
   const progress  = $('#progress');
-  const heroImg   = $('#heroImg');
+  const heroSlidesWrap = $('#heroSlides');
   const heroCon   = $('.hero__content');
   const parallaxEls = $$('.parallax');
   let ticking = false;
@@ -57,8 +57,8 @@
       const vh = window.innerHeight;
       if (y < vh) {
         const p = y / vh;
-        heroImg.style.transform = `scale(${1.05 + p * 0.12})`;
-        heroImg.style.opacity = String(1 - p * 0.6);
+        heroSlidesWrap.style.transform = `scale(${1.05 + p * 0.12})`;
+        heroSlidesWrap.style.opacity = String(1 - p * 0.6);
         heroCon.style.transform = `translateY(${p * 60}px)`;
         heroCon.style.opacity = String(1 - p * 1.1);
       }
@@ -81,6 +81,36 @@
   window.addEventListener('scroll', requestScroll, { passive: true });
   window.addEventListener('resize', onScroll);
   onScroll();
+
+  /* ───────── Hero slideshow ───────── */
+  const heroSlideEls = $$('.hero__slide');
+  const heroDots = $('#heroDots');
+  let heroIdx = 0, heroTimer = null;
+  if (heroSlideEls.length > 1) {
+    heroSlideEls.forEach((_, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Слайд ' + (i + 1));
+      if (i === 0) b.classList.add('is-active');
+      b.addEventListener('click', () => goHeroSlide(i, true));
+      heroDots.appendChild(b);
+    });
+    const dotEls = $$('button', heroDots);
+
+    function goHeroSlide(n, fromUser) {
+      heroSlideEls[heroIdx].classList.remove('is-active');
+      if (dotEls[heroIdx]) dotEls[heroIdx].classList.remove('is-active');
+      heroIdx = (n + heroSlideEls.length) % heroSlideEls.length;
+      heroSlideEls[heroIdx].classList.add('is-active');
+      if (dotEls[heroIdx]) dotEls[heroIdx].classList.add('is-active');
+      if (fromUser) startHeroTimer();
+    }
+    function startHeroTimer() {
+      clearInterval(heroTimer);
+      if (!prefersReduced) heroTimer = setInterval(() => goHeroSlide(heroIdx + 1), 5500);
+    }
+    startHeroTimer();
+  }
 
   /* ───────── Reveal on scroll ───────── */
   const revealTargets = $$('.reveal, .reveal-line');

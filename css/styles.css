@@ -241,13 +241,37 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
 }
 .hero__media { position: absolute; inset: 0; z-index: -1; }
-.hero__img {
+.hero__slides {
   position: absolute; inset: -5%;
-  background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1920&q=80');
-  background-size: cover; background-position: center;
   transform: scale(1.05);
   will-change: transform, opacity;
+  background: #17150f;
 }
+.hero__slide {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: 0;
+  transition: opacity 1.6s var(--ease);
+  will-change: opacity, transform;
+}
+.hero__slide.is-active {
+  opacity: 1;
+  animation: heroKen 7s ease-out forwards;
+}
+@keyframes heroKen { from { transform: scale(1); } to { transform: scale(1.08); } }
+
+.hero__dots {
+  position: absolute; right: var(--pad); bottom: 2.6rem; z-index: 3;
+  display: flex; gap: .7rem;
+}
+.hero__dots button {
+  width: 30px; height: 3px; padding: 0; border: none; border-radius: 3px;
+  background: rgba(248,245,240,.32); cursor: pointer;
+  transition: background .5s var(--ease), transform .5s var(--ease), width .5s var(--ease);
+}
+.hero__dots button:hover { background: rgba(248,245,240,.6); }
+.hero__dots button.is-active { background: var(--gold); width: 46px; }
+@media (max-width: 768px) { .hero__dots { bottom: 5.5rem; } }
 .hero__overlay {
   position: absolute; inset: 0;
   background:
