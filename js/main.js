@@ -125,102 +125,102 @@
 
   const MENU = {
     signature: [
-      { name: 'Le Grand Voyage', price: '$285', img: '1600891964599-f61ba0e24092',
-        desc: 'A nine-course odyssey through the season, composed tableside and paced like a symphony.',
-        ing: 'Seasonal · daily market', wine: 'Full pairing flight', chef: true },
-      { name: 'Golden Osetra Service', price: '$140', img: '1607301405390-d831c242f59b',
-        desc: 'Oscietra caviar, warm blini, crème fraîche and a whisper of chive oil.',
-        ing: 'Oscietra · buckwheat', wine: 'Blanc de Blancs' },
-      { name: 'Truffle & Fire', price: '$96', img: '1476124369491-e7addf5db371',
-        desc: 'Hand-rolled tagliolini bathed in butter, showered with winter black truffle.',
-        ing: 'Périgord truffle', wine: 'Aged Barolo', chef: true },
+      { name: 'Le Grand Voyage', price: '25 900 ₽', img: '1600891964599-f61ba0e24092',
+        desc: 'Одиссея из девяти блюд сквозь сезон, собранная у стола и выстроенная как симфония.',
+        ing: 'Сезонное · с рынка', wine: 'Полный винный сет', chef: true },
+      { name: 'Золотая осетра', price: '12 700 ₽', img: '1607301405390-d831c242f59b',
+        desc: 'Икра осетра, тёплые блины, крем-фреш и лёгкий штрих чесночного масла.',
+        ing: 'Осетра · гречка', wine: 'Blanc de Blancs' },
+      { name: 'Трюфель и огонь', price: '8 700 ₽', img: '1476124369491-e7addf5db371',
+        desc: 'Тальолини ручной работы в масле, обильно присыпанные зимним чёрным трюфелем.',
+        ing: 'Трюфель Перигор', wine: 'Выдержанное Бароло', chef: true },
     ],
     starters: [
-      { name: 'Heirloom Tomato Tart', price: '$32', img: '1540189549336-e6e99c3679fe',
-        desc: 'Sun-ripened tomatoes, whipped ricotta, basil oil on a paper-thin galette.',
-        ing: 'Heirloom tomato', wine: 'Provence Rosé' },
-      { name: 'Foie Gras Torchon', price: '$46', img: '1432139555190-58524dae6a55',
-        desc: 'Silken torchon, brioche toast, Sauternes gelée and toasted hazelnut.',
-        ing: 'Foie gras · Sauternes', wine: 'Sauternes', chef: true },
-      { name: 'Burrata & Persimmon', price: '$34', img: '1505253716362-afaea1d3d1af',
-        desc: 'Creamy burrata, autumn persimmon, saba reduction and micro basil.',
-        ing: 'Burrata · persimmon', wine: 'Soave Classico' },
+      { name: 'Тарт с томатами реликтовых сортов', price: '2 900 ₽', img: '1540189549336-e6e99c3679fe',
+        desc: 'Спелые на солнце томаты, взбитая рикотта, базиликовое масло на тончайшей галете.',
+        ing: 'Реликтовый томат', wine: 'Розе из Прованса' },
+      { name: 'Торшон из фуа-гра', price: '4 200 ₽', img: '1432139555190-58524dae6a55',
+        desc: 'Шелковистый торшон, тост из бриоши, желе из сотерна и жареный фундук.',
+        ing: 'Фуа-гра · сотерн', wine: 'Сотерн', chef: true },
+      { name: 'Бурата и хурма', price: '3 100 ₽', img: '1505253716362-afaea1d3d1af',
+        desc: 'Сливочная бурата, осенняя хурма, редукция саба и микробазилик.',
+        ing: 'Бурата · хурма', wine: 'Soave Classico' },
     ],
     seafood: [
-      { name: 'Diver Scallop', price: '$58', img: '1519708227418-c8fd9a32b7a2',
-        desc: 'Seared to a caramel edge, cauliflower velouté, brown butter and capers.',
-        ing: 'Day-boat scallop', wine: 'Chablis 1er Cru', chef: true },
-      { name: 'Butter-Poached Lobster', price: '$72', img: '1553247407-23251ce81f59',
-        desc: 'Maine lobster gently poached, vanilla bisque, fennel and citrus.',
-        ing: 'Maine lobster', wine: 'White Burgundy' },
-      { name: 'Line-Caught Turbot', price: '$66', img: '1544025162-d76694265947',
-        desc: 'Roasted on the bone, champagne beurre blanc, sea herbs and caviar.',
-        ing: 'Wild turbot', wine: 'Meursault' },
+      { name: 'Гребешок дайвера', price: '5 300 ₽', img: '1519708227418-c8fd9a32b7a2',
+        desc: 'Обжарен до карамельной корочки, велюте из цветной капусты, ореховое масло и каперсы.',
+        ing: 'Гребешок дня', wine: 'Chablis 1er Cru', chef: true },
+      { name: 'Лобстер в масле', price: '6 500 ₽', img: '1553247407-23251ce81f59',
+        desc: 'Мэнский лобстер, нежно томлённый, ванильный бисквит, фенхель и цитрус.',
+        ing: 'Мэнский лобстер', wine: 'Белое Бургундское' },
+      { name: 'Тюрбо на кости', price: '6 000 ₽', img: '1544025162-d76694265947',
+        desc: 'Запечён на кости, шампанское бёр-блан, морские травы и икра.',
+        ing: 'Дикий тюрбо', wine: 'Meursault' },
     ],
     meat: [
-      { name: 'Dry-Aged Wagyu', price: '$120', img: '1546241072-48010ad2862c',
-        desc: 'A5 Wagyu, bone marrow, charred allium, red wine jus and smoked salt.',
-        ing: 'A5 Wagyu · 45-day', wine: 'Napa Cabernet', chef: true },
-      { name: 'Herb-Crusted Lamb', price: '$78', img: '1558030006-450675393462',
-        desc: 'Rack of lamb, Dijon-herb crust, ratatouille and rosemary jus.',
-        ing: 'Milk-fed lamb', wine: 'Châteauneuf-du-Pape' },
-      { name: 'Duck à l’Orange', price: '$68', img: '1432139555190-58524dae6a55',
-        desc: 'Roasted duck breast, blood orange, glazed endive and duck reduction.',
-        ing: 'Barbary duck', wine: 'Pinot Noir' },
+      { name: 'Вагю сухой выдержки', price: '10 900 ₽', img: '1546241072-48010ad2862c',
+        desc: 'Вагю A5, костный мозг, обугленный лук, соус на красном вине и копчёная соль.',
+        ing: 'Вагю A5 · 45 дней', wine: 'Каберне из Напы', chef: true },
+      { name: 'Ягнёнок в травяной корке', price: '7 100 ₽', img: '1558030006-450675393462',
+        desc: 'Каре ягнёнка, дижонско-травяная корка, рататуй и розмариновый соус.',
+        ing: 'Молочный ягнёнок', wine: 'Châteauneuf-du-Pape' },
+      { name: 'Утка по-апельсиновому', price: '6 200 ₽', img: '1432139555190-58524dae6a55',
+        desc: 'Запечённая утиная грудка, кровавый апельсин, глазированный эндивий и утиный соус.',
+        ing: 'Утка барбари', wine: 'Пино Нуар' },
     ],
     vegetarian: [
-      { name: 'Garden in Winter', price: '$54', img: '1512621776951-a57141f2eefd',
-        desc: 'Roasted roots, celeriac purée, black garlic and toasted seeds.',
-        ing: 'Biodynamic roots', wine: 'Grüner Veltliner', chef: true },
-      { name: 'Wild Mushroom Risotto', price: '$46', img: '1476124369491-e7addf5db371',
-        desc: 'Carnaroli rice, forest mushrooms, aged parmesan and truffle oil.',
-        ing: 'Forest mushroom', wine: 'Nebbiolo' },
-      { name: 'Charred Cauliflower', price: '$38', img: '1568584711075-3d021a7c3ca3',
-        desc: 'Whole-roasted cauliflower, tahini, pomegranate and dukkah.',
-        ing: 'Heritage cauliflower', wine: 'Chenin Blanc' },
+      { name: 'Сад зимой', price: '4 900 ₽', img: '1512621776951-a57141f2eefd',
+        desc: 'Запечённые корнеплоды, пюре из сельдерея, чёрный чеснок и жареные семена.',
+        ing: 'Биодинамические корни', wine: 'Grüner Veltliner', chef: true },
+      { name: 'Ризотто с лесными грибами', price: '4 200 ₽', img: '1476124369491-e7addf5db371',
+        desc: 'Рис карнароли, лесные грибы, выдержанный пармезан и трюфельное масло.',
+        ing: 'Лесные грибы', wine: 'Nebbiolo' },
+      { name: 'Обугленная цветная капуста', price: '3 400 ₽', img: '1568584711075-3d021a7c3ca3',
+        desc: 'Целиком запечённая капуста, тахини, гранат и дукка.',
+        ing: 'Наследная капуста', wine: 'Chenin Blanc' },
     ],
     desserts: [
-      { name: 'Grand Cru Soufflé', price: '$28', img: '1551024601-bec78aea704b',
-        desc: 'Valrhona chocolate soufflé, crème anglaise poured tableside.',
-        ing: 'Valrhona 70%', wine: 'Vintage Port', chef: true },
-      { name: 'Tarte Tatin', price: '$24', img: '1488477181946-6428a0291777',
-        desc: 'Caramelised apple, buttery pastry, crème fraîche ice cream.',
-        ing: 'Orchard apple', wine: 'Ice Wine' },
-      { name: 'Gold Leaf Éclair', price: '$22', img: '1587314168485-3236d6710814',
-        desc: 'Vanilla craquelin éclair, hazelnut praline and 24k gold leaf.',
-        ing: 'Tahitian vanilla', wine: 'Moscato d’Asti' },
+      { name: 'Суфле Grand Cru', price: '2 500 ₽', img: '1551024601-bec78aea704b',
+        desc: 'Шоколадное суфле Valrhona, крем англез, поданный у стола.',
+        ing: 'Valrhona 70%', wine: 'Винтажный портвейн', chef: true },
+      { name: 'Тарт Татен', price: '2 100 ₽', img: '1488477181946-6428a0291777',
+        desc: 'Карамелизованное яблоко, сливочное тесто, мороженое из крем-фреша.',
+        ing: 'Садовое яблоко', wine: 'Ледяное вино' },
+      { name: 'Эклер с золотом', price: '2 000 ₽', img: '1587314168485-3236d6710814',
+        desc: 'Ванильный эклер кракелин, пралине из фундука и сусальное золото 24k.',
+        ing: 'Таитянская ваниль', wine: 'Moscato d’Asti' },
     ],
     wines: [
-      { name: 'Château Margaux', price: '$680', img: '1510812431401-41d2bd2722f3', isWine: true,
-        desc: 'First-growth Bordeaux — cassis, violet and cedar, a legend in the glass.',
-        ing: 'Bordeaux · 2015', wineTxt: 'Cabernet blend' },
-      { name: 'Domaine Leflaive', price: '$520', img: '1584916201218-f4242ceb4809', isWine: true,
-        desc: 'Puligny-Montrachet — flint, white flowers and a saline finish.',
-        ing: 'Burgundy · 2018', wineTxt: 'Chardonnay' },
-      { name: 'Barolo Riserva', price: '$340', img: '1516594915697-87eb3b1c14ea', isWine: true,
-        desc: 'Nebbiolo of great structure — rose, tar and dried cherry.',
-        ing: 'Piedmont · 2013', wineTxt: 'Nebbiolo' },
+      { name: 'Château Margaux', price: '61 000 ₽', img: '1510812431401-41d2bd2722f3', isWine: true,
+        desc: 'Бордо первого гро-крю — кассис, фиалка и кедр, легенда в бокале.',
+        ing: 'Бордо · 2015', wineTxt: 'Купаж каберне' },
+      { name: 'Domaine Leflaive', price: '46 500 ₽', img: '1584916201218-f4242ceb4809', isWine: true,
+        desc: 'Пюлиньи-Монраше — кремень, белые цветы и солоноватое послевкусие.',
+        ing: 'Бургундия · 2018', wineTxt: 'Шардоне' },
+      { name: 'Barolo Riserva', price: '30 500 ₽', img: '1516594915697-87eb3b1c14ea', isWine: true,
+        desc: 'Неббиоло большой структуры — роза, дёготь и вяленая вишня.',
+        ing: 'Пьемонт · 2013', wineTxt: 'Неббиоло' },
     ],
     champagne: [
-      { name: 'Dom Pérignon', price: '$420', img: '1550505095-81378a674395', isWine: true,
-        desc: 'Vintage cuvée — brioche, almond and a fine, persistent bead.',
-        ing: 'Champagne · 2013', wineTxt: 'Chardonnay · Pinot' },
-      { name: 'Krug Grande Cuvée', price: '$460', img: '1594372685099-8f8f06b32e5a', isWine: true,
-        desc: 'A tapestry of reserve wines — honey, hazelnut and citrus zest.',
-        ing: 'Multi-vintage', wineTxt: 'Grande Cuvée' },
-      { name: 'Salon Le Mesnil', price: '$980', img: '1547595628-c61a29f496f0', isWine: true,
-        desc: 'Blanc de Blancs of rare precision — chalk, lemon oil, eternity.',
-        ing: 'Grand Cru · 2012', wineTxt: 'Blanc de Blancs', chef: true },
+      { name: 'Dom Pérignon', price: '37 500 ₽', img: '1550505095-81378a674395', isWine: true,
+        desc: 'Винтажная кюве — бриошь, миндаль и тонкий стойкий перляж.',
+        ing: 'Шампань · 2013', wineTxt: 'Шардоне · Пино' },
+      { name: 'Krug Grande Cuvée', price: '41 000 ₽', img: '1594372685099-8f8f06b32e5a', isWine: true,
+        desc: 'Гобелен из резервных вин — мёд, фундук и цитрусовая цедра.',
+        ing: 'Мультивинтаж', wineTxt: 'Grande Cuvée' },
+      { name: 'Salon Le Mesnil', price: '87 500 ₽', img: '1547595628-c61a29f496f0', isWine: true,
+        desc: 'Blanc de Blancs редкой точности — мел, лимонное масло, вечность.',
+        ing: 'Гран-крю · 2012', wineTxt: 'Blanc de Blancs', chef: true },
     ],
   };
 
   const menuGrid = $('#menuGrid');
 
   function dishCard(d, i) {
-    const badge = d.chef ? `<span class="dish__badge">Chef's Recommendation</span>` : '';
+    const badge = d.chef ? `<span class="dish__badge">Выбор шефа</span>` : '';
     const secondRow = d.isWine
-      ? `<div class="dish__meta-row"><span class="dish__meta-k">Grape</span><span class="dish__meta-v">${d.wineTxt || ''}</span></div>`
-      : `<div class="dish__meta-row"><span class="dish__meta-k">Pairing</span><span class="dish__meta-v">${d.wine || '—'}</span></div>`;
+      ? `<div class="dish__meta-row"><span class="dish__meta-k">Сорт</span><span class="dish__meta-v">${d.wineTxt || ''}</span></div>`
+      : `<div class="dish__meta-row"><span class="dish__meta-k">В паре с</span><span class="dish__meta-v">${d.wine || '—'}</span></div>`;
     return `
       <article class="dish ${d.isWine ? 'dish--wine' : ''}" data-idx="${i}">
         <div class="dish__media">
@@ -234,7 +234,7 @@
           </div>
           <p class="dish__desc">${d.desc}</p>
           <div class="dish__meta">
-            <div class="dish__meta-row"><span class="dish__meta-k">${d.isWine ? 'Region' : 'Season'}</span><span class="dish__meta-v">${d.ing}</span></div>
+            <div class="dish__meta-row"><span class="dish__meta-k">${d.isWine ? 'Регион' : 'Сезон'}</span><span class="dish__meta-v">${d.ing}</span></div>
             ${secondRow}
           </div>
         </div>
@@ -263,15 +263,15 @@
 
   /* ═══════════ GALLERY ═══════════ */
   const GALLERY = [
-    { id: '1414235077428-338989a2e8c0', cap: 'The dining room' },
-    { id: '1600891964092-4316c288032e', cap: 'On the pass' },
-    { id: '1546241072-48010ad2862c',    cap: 'Fire & smoke' },
-    { id: '1510812431401-41d2bd2722f3', cap: 'The cellar' },
-    { id: '1517248135467-4c7edcad34c4', cap: 'Candlelight' },
-    { id: '1551218808-94e220e084d2',    cap: 'First course' },
-    { id: '1424847651672-bf20a4b0982b', cap: 'The bar' },
-    { id: '1592861956120-e524fc739696', cap: 'Evening service' },
-    { id: '1414235077428-338989a2e8c0', cap: 'Reflections' },
+    { id: '1414235077428-338989a2e8c0', cap: 'Обеденный зал' },
+    { id: '1600891964092-4316c288032e', cap: 'На пассе' },
+    { id: '1546241072-48010ad2862c',    cap: 'Огонь и дым' },
+    { id: '1510812431401-41d2bd2722f3', cap: 'Погреб' },
+    { id: '1517248135467-4c7edcad34c4', cap: 'При свечах' },
+    { id: '1551218808-94e220e084d2',    cap: 'Первая подача' },
+    { id: '1424847651672-bf20a4b0982b', cap: 'Барная стойка' },
+    { id: '1592861956120-e524fc739696', cap: 'Вечерний сервис' },
+    { id: '1414235077428-338989a2e8c0', cap: 'Отражения' },
   ];
   const galleryGrid = $('#galleryGrid');
   galleryGrid.innerHTML = GALLERY.map((g, i) => `
@@ -318,17 +318,17 @@
 
   /* ═══════════ TESTIMONIALS ═══════════ */
   const VOICES = [
-    { text: 'A single evening that reset my definition of what dinner could be. Flawless, unhurried, unforgettable.',
-      name: 'Aria Whitmore', role: 'Le Guide · Critic', ava: '1494790108377-be9c29b29330' },
-    { text: 'Every plate arrived like a sentence in a beautiful story. The sommelier read us perfectly.',
-      name: 'Julian Reyes', role: 'Regular guest', ava: '1500648767791-00dcc994a43e' },
-    { text: 'Quiet luxury in its truest form. Nothing shouts, yet everything astonishes. We will return.',
-      name: 'Sofia Laurent', role: 'Anniversary dinner', ava: '1438761681033-6461ffad8d80' },
+    { text: 'Один вечер, который переопределил само моё представление об ужине. Безупречно, неспешно, незабываемо.',
+      name: 'Ариа Уитмор', role: 'Гид · Критик', ava: '1494790108377-be9c29b29330' },
+    { text: 'Каждое блюдо приходило как фраза из прекрасной истории. Сомелье прочитал нас безошибочно.',
+      name: 'Джулиан Рейес', role: 'Постоянный гость', ava: '1500648767791-00dcc994a43e' },
+    { text: 'Тихая роскошь в чистейшем виде. Ничто не кричит, но всё поражает. Мы обязательно вернёмся.',
+      name: 'София Лоран', role: 'Ужин на годовщину', ava: '1438761681033-6461ffad8d80' },
   ];
   const voicesGrid = $('#voicesGrid');
   voicesGrid.innerHTML = VOICES.map((v, i) => `
     <blockquote class="voice" data-idx="${i}">
-      <div class="voice__quote">&ldquo;</div>
+      <div class="voice__quote">&laquo;</div>
       <div class="voice__stars">★ ★ ★ ★ ★</div>
       <p class="voice__text">${v.text}</p>
       <footer class="voice__by">
@@ -375,9 +375,9 @@
     const name = $('#name').value.trim().split(' ')[0];
     const guests = $('#guests').value;
     const date = new Date($('#date').value + 'T00:00:00')
-      .toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      .toLocaleDateString('ru-RU', { weekday: 'long', month: 'long', day: 'numeric' });
     $('#successMsg').textContent =
-      `Thank you, ${name}. A table for ${guests.toLowerCase()} on ${date} at ${$('#time').value} is confirmed. A note is on its way to your inbox.`;
+      `Спасибо, ${name}! Стол на ${guests} — ${date}, ${$('#time').value} — забронирован. Письмо с подтверждением уже летит на вашу почту.`;
     success.classList.add('is-shown');
   });
 
@@ -399,10 +399,10 @@
     e.preventDefault();
     const input = newsForm.querySelector('input');
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
-      newsNote.textContent = 'Welcome to the table. Watch your inbox.';
+      newsNote.textContent = 'Добро пожаловать за наш стол. Ждите письмо.';
       input.value = '';
     } else {
-      newsNote.textContent = 'Please enter a valid email.';
+      newsNote.textContent = 'Пожалуйста, введите корректный email.';
     }
   });
 

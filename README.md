@@ -4,6 +4,8 @@ A premium, award-winning fine-dining restaurant website with an ultra-luxury,
 minimalist aesthetic inspired by Michelin-starred restaurants. Timeless,
 cinematic, and immersive — built as a fast, dependency-free static site.
 
+**Interface language: Russian (ru).**
+
 ## Highlights
 
 - **Cinematic hero** with scroll-driven zoom, fade, and content parallax
