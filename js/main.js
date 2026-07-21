@@ -155,13 +155,13 @@
 
   const MENU = {
     signature: [
-      { name: 'Le Grand Voyage', price: '25 900 ₽', img: '1600891964599-f61ba0e24092',
+      { name: 'Le Grand Voyage', price: '25 900 ₽', photo: 'Le Grand Voyage.jpeg',
         desc: 'Одиссея из девяти блюд сквозь сезон, собранная у стола и выстроенная как симфония.',
         ing: 'Сезонное · с рынка', wine: 'Полный винный сет', chef: true },
-      { name: 'Золотая осетра', price: '12 700 ₽', img: '1607301405390-d831c242f59b',
+      { name: 'Золотая осетра', price: '12 700 ₽', photo: 'Золото осетра.jpeg',
         desc: 'Икра осетра, тёплые блины, крем-фреш и лёгкий штрих чесночного масла.',
         ing: 'Осетра · гречка', wine: 'Blanc de Blancs' },
-      { name: 'Трюфель и огонь', price: '8 700 ₽', img: '1476124369491-e7addf5db371',
+      { name: 'Трюфель и огонь', price: '8 700 ₽', photo: 'Трюфель и огонь.jpeg',
         desc: 'Тальолини ручной работы в масле, обильно присыпанные зимним чёрным трюфелем.',
         ing: 'Трюфель Перигор', wine: 'Выдержанное Бароло', chef: true },
     ],
@@ -255,7 +255,7 @@
       <article class="dish ${d.isWine ? 'dish--wine' : ''}" data-idx="${i}">
         <div class="dish__media">
           ${badge}
-          <div class="dish__img" style="background-image:url('${IMG(d.img)}')"></div>
+          <div class="dish__img" style="background-image:url('${d.photo ? encodeURI(d.photo) : IMG(d.img)}')"></div>
         </div>
         <div class="dish__body">
           <div class="dish__top">
