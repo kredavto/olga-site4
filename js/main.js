@@ -294,7 +294,6 @@
   /* ═══════════ GALLERY ═══════════ */
   const GALLERY = [
     { id: '1414235077428-338989a2e8c0', cap: 'Обеденный зал' },
-    { id: '1600891964092-4316c288032e', cap: 'На пассе' },
     { id: '1546241072-48010ad2862c',    cap: 'Огонь и дым' },
     { id: '1510812431401-41d2bd2722f3', cap: 'Погреб' },
     { id: '1517248135467-4c7edcad34c4', cap: 'При свечах' },
@@ -304,9 +303,10 @@
     { id: '1414235077428-338989a2e8c0', cap: 'Отражения' },
   ];
   const galleryGrid = $('#galleryGrid');
+  const gphoto = (g) => encodeURI((g.photo || (g.cap + '.jpeg')).normalize('NFC'));
   galleryGrid.innerHTML = GALLERY.map((g, i) => `
-    <a class="gallery__item" data-idx="${i}" data-full="${IMG(g.id, 1400)}" href="${IMG(g.id, 1400)}" aria-label="${g.cap}">
-      <img src="${IMG(g.id, 700)}" alt="${g.cap}" loading="lazy" />
+    <a class="gallery__item" data-idx="${i}" data-full="${gphoto(g)}" href="${gphoto(g)}" aria-label="${g.cap}">
+      <img src="${gphoto(g)}" alt="${g.cap}" loading="lazy" />
       <span class="gallery__cap">${g.cap}</span>
     </a>`).join('');
   observeCards($$('.gallery__item', galleryGrid));
