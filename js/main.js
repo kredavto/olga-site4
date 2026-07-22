@@ -255,7 +255,7 @@
       <article class="dish ${d.isWine ? 'dish--wine' : ''}" data-idx="${i}">
         <div class="dish__media">
           ${badge}
-          <div class="dish__img" style="background-image:url('${d.photo ? encodeURI(d.photo) : IMG(d.img)}')"></div>
+          <div class="dish__img" style="background-image:url('${encodeURI((d.photo || (d.name + '.jpeg')).normalize('NFC'))}')"></div>
         </div>
         <div class="dish__body">
           <div class="dish__top">
